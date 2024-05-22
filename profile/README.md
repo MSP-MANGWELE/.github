@@ -1,10 +1,16 @@
 # DOCUMENTATION TECHNIQUE GENERALE (DTIC)
+Ce document aborde plusieurs aspects pour le developpement des differentes applications réalisés par la DTIC, ces partenaires et ces consultants.
+
+## Table des matières
+- [Normes et conventions Laravel](#normes-et-conventions-laravel)
+- [Normes et Conventions Flutter](#normes-et-conventions-flutter)
+- [Documentation de Projet pour les Applications Mobiles Mangwele et Mavimpi](#documentation-de-projet-pour-les-applications-mobiles-mangwele-et-mavimpi)
 
 ---------------------------------------------------------------------------------------------------
 
 ![Laravel Logo](https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg)
 
-# Normes et conventions Laravel
+# **Normes et conventions Laravel**
 
 Cette documentation technique vise à fournir des lignes directrices et des normes pour le développement avec le framework Laravel au sein de la Direction des Technologies de l'Information du Ministère de la Santé et de la Population. Elle couvre une variété de bonnes pratiques et conventions à suivre pour assurer la qualité, la maintenabilité et la cohérence du code. Les thèmes abordés incluent le principe de responsabilité unique, l'utilisation de modèles et de contrôleurs, la validation, l'organisation de la logique métier, et l'importance de ne pas se répéter. De plus, des recommandations sont faites concernant l'utilisation d'Eloquent plutôt que de requêtes SQL brutes, l'affectation en masse, et la gestion des requêtes dans les modèles Blade. En suivant ces conventions, les développeurs peuvent créer des applications Laravel plus robustes, efficaces et faciles à maintenir.
 
@@ -607,7 +613,7 @@ Minimisez l'utilisation de PHP vanilla dans les modèles de blade.
 
 ![Flutter Logo](https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png)
 
-# Normes et Conventions Flutter
+# **Normes et Conventions Flutter**
 
 Cette documentation fournit des lignes directrices et des normes pour le développement avec le framework Flutter. Ces conventions visent à assurer la qualité, la maintenabilité et la cohérence du code. Elles couvrent une variété de bonnes pratiques, allant de la structure du projet à la gestion de l'état et l'utilisation de widgets.
 
@@ -742,3 +748,77 @@ Dans ce cas, vous pouvez configurer Getx pour gérer les traductions de manière
 
 En suivant ces normes et conventions, les développeurs peuvent créer des applications Flutter plus robustes, maintenables et cohérentes.
 
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+# **Documentation de Projet pour les Applications Mobiles Mangwele et Mavimpi**
+
+## Introduction
+
+Ce document explique la réalisation et le fonctionnement des applications Mangwele et Mavimpi, toutes deux destinées à des usages communautaires en République du Congo.
+
+- **Mavimpi** : Une application permettant de récolter des informations sur les ménages à travers tout le territoire, utilisée par les agents communautaires pour diverses fins statistiques et administratives.
+- **Mangwele** : Une application de collecte de données de vaccination et de rappel vaccinal par SMS, utilisée pour améliorer la couverture vaccinale et le suivi des vaccinations en République du Congo.
+
+## Architecture de l'Application
+
+Les deux applications sont construites suivant le modèle MVVM (Model-View-ViewModel), une architecture visant à séparer la logique des interfaces utilisateurs de la logique métier. Cette approche garantit une structure bien définie et facile à maintenir.
+
+### Structure de l'Application
+
+#### 1. Components
+
+- **Composants** : Regroupe tous les widgets UI réutilisables pour les différents écrans de l'application.
+
+#### 2. Composables
+
+- **Fonctions d'appel API** : Définit la logique de chaque appel API, incluant l'URL appelée, la méthode HTTP et les données envoyées, si elles existent.
+- **Fonction de redirection** : Gère les réponses reçues des API pour rediriger les utilisateurs en fonction des réponses.
+
+#### 3. Storage
+
+- **Classe de stockage** : Gère le stockage local d'informations comme le token et d'autres données utilisateur nécessaires pour certaines opérations.
+
+#### 4. Models
+
+- **Modèles** : Contient toutes les classes modèles et référentiels utilisés pour le traitement des données, l’hydratation des objets, et l'affichage des informations.
+
+#### 5. Modules
+
+Chaque module représente une partie distincte de l'application et contient :
+- **Vue (View)** : Code UI.
+- **Contrôleur (Controller)** : Logique de l'application.
+- **Service** : Appels API.
+
+#### 6. Resources
+
+- **Fichiers de traduction** : Pour l'internationalisation.
+- **Fichier de couleurs** : Définition des couleurs de l'application.
+- **Autres fichiers de ressources** : Comme les polices et les icônes.
+
+#### 7. Utils
+
+- **Fonctions utilitaires** : Contient des fonctions réutilisables dans toute l'application, telles que des fonctions de conversion de date et d'heure.
+
+#### 8. Routes
+
+- **Gestion des routes** : Définit toutes les routes pour la navigation dans l'application.
+
+## Technologie, Framework et Bibliothèque Utilisés
+
+- **Langue de programmation** : Dart
+- **Framework** : Flutter
+- **Bibliothèque** :
+  - `getx`
+  - `flutter_secure_storage`
+  - `http`
+  - `flutter_screen_utils`
+  - `sqflite`
+  - `path`
+
+Pour plus d'informations sur ces bibliothèques, consultez [pub.dev](https://www.pub.dev).
+
+## Conclusion
+
+Cette documentation fournit un aperçu structuré de l'architecture et des technologies utilisées dans le développement des applications Mangwele et Mavimpi. En suivant ces conventions et normes, nous assurons des applications robustes, maintenables et facilement extensibles pour répondre aux besoins de la communauté.
