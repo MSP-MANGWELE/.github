@@ -684,6 +684,8 @@ Utilisez le package `flutter_navigation` pour une navigation claire et concise.
 - Définissez toutes les routes dans un fichier central `routes.dart`.
 - Utilisez `Navigator.pushNamed` pour la navigation basée sur des noms de routes.
 
+Si vous utilisez Getx, profitez de son système de navigation intégré pour simplifier et optimiser la gestion des routes et des transitions entre les pages.
+
 ### Bonnes pratiques pour les performances
 
 - Minimisez l'utilisation de widgets redondants.
@@ -693,9 +695,31 @@ Utilisez le package `flutter_navigation` pour une navigation claire et concise.
 
 ### Internationalisation
 
-- Utilisez le package `flutter_localizations` pour l'internationalisation.
-- Stockez toutes les chaînes de caractères dans des fichiers de localisation.
-- Utilisez des clés de localisation descriptives (par exemple, `home_title` plutôt que `ht`).
+Assurez-vous que votre application est accessible à un public mondial en implémentant l'internationalisation. Pour les applications Mangwele et Mavimpi, nous utiliserons Getx pour gérer l'internationalisation, grâce à ses nombreuses fonctionnalités pratiques. Cette recommandation n'a pas pour but de comparer les fonctionnalités des différentes solutions d'internationalisation, mais de fournir une méthode adaptée à la complexité de l'application.
+
+- Utilisez le package `flutter_localizations` pour supporter plusieurs langues.
+- Définissez toutes les chaînes de caractères dans des fichiers de localisation centralisés, par exemple `en.json` et `fr.json`.
+- Utilisez `Localizations.of(context)` pour accéder aux chaînes localisées dans votre application.
+
+Lorsque Getx est utilisé, privilégiez son système intégré d'internationalisation pour une gestion efficace et simplifiée des différentes langues.
+
+```dart
+import 'package:get/get.dart';
+
+class Messages extends Translations {
+  @override
+  Map<String, Map<String, String>> get keys => {
+    'en_US': {
+      'hello': 'Hello',
+    },
+    'fr_FR': {
+      'hello': 'Bonjour',
+    },
+  };
+}
+```
+
+Dans ce cas, vous pouvez configurer Getx pour gérer les traductions de manière centralisée et dynamique, rendant votre application plus adaptable aux besoins multilingues.
 
 ### Tests
 
