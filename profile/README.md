@@ -1,4 +1,4 @@
-# DOCUMENTATION TECHNIQUE GENERALE (DTIC)
+# DOCUMENTATION TECHNIQUE SUR L'ENVIRONNEMENT DE DEVELOPPEMENT (DTIC)
 Ce document aborde plusieurs aspects pour le developpement des differentes applications réalisés par la DTIC, ces partenaires et ces consultants.
 
 ## Table des matières
