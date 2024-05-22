@@ -8,37 +8,38 @@
 
 - [Gros Modèles, contrôleurs maigres](#gros-modèles-contrôleurs-maigres)
 
-[Validation](#validation)
+- [Validation](#validation)
 
-[La logique métier doit être dans une classe de service](#la-logique-métier-doit-être-dans-une-classe-de-service)
+- [La logique métier doit être dans une classe de service](#la-logique-métier-doit-être-dans-une-classe-de-service)
 
-[Ne te répète pas (DRY)](#ne-te-répète-pas-dry)
+- [Ne te répète pas (DRY)](#ne-te-répète-pas-dry)
 
-[Préférez utiliser Eloquent à l’utilisation de Query Builder et de requêtes SQL brutes. Préférez les collections aux tableaux](#préférez-utiliser-eloquent-à-lutilisation-de-query-builder-et-de-requêtes-sql-brutes-préférez-les-collections-aux-tableaux)
+- [Préférez utiliser Eloquent à l’utilisation de Query Builder et de requêtes SQL brutes. Préférez les collections aux tableaux](#préférez-utiliser-eloquent-à-lutilisation-de-query-builder-et-de-requêtes-sql-brutes-préférez-les-collections-aux-tableaux)
 
-[Affectation en masse](#affectation-en-masse)
+- [Affectation en masse](#affectation-en-masse)
 
-[N'exécutez pas de requêtes dans les modèles de blade et utilisez un chargement rapide (N + 1 problème)](#nexécutez-pas-de-requêtes-dans-les-modèles-blade-et-utilisez-un-chargement-rapide-eager-loading-problème-n--1)
+- [N'exécutez pas de requêtes dans les modèles de blade et utilisez un chargement rapide (N + 1 problème)](#nexécutez-pas-de-requêtes-dans-les-modèles-blade-et-utilisez-un-chargement-rapide-eager-loading-problème-n--1)
 
-[Commentez votre code, mais préférez une méthode descriptive et les noms de variables aux commentaires](#commentez-votre-code-mais-préférez-une-méthode-descriptive-et-des-noms-de-variables-aux-commentaires)
+- [Commentez votre code, mais préférez une méthode descriptive et les noms de variables aux commentaires](#commentez-votre-code-mais-préférez-une-méthode-descriptive-et-des-noms-de-variables-aux-commentaires)
 
-[Ne mettez pas JS et CSS dans les templates Blade et ne mettez pas de HTML dans les classes PHP](#ne-mettez-pas-js-et-css-dans-les-templates-blade-et-ne-mettez-pas-de-html-dans-les-classes-php)
+- [Ne mettez pas JS et CSS dans les templates Blade et ne mettez pas de HTML dans les classes PHP](#ne-mettez-pas-js-et-css-dans-les-templates-blade-et-ne-mettez-pas-de-html-dans-les-classes-php)
 
-[Utilisez des fichiers de configuration et de langue, des constantes au lieu du texte dans le code](#utilisez-des-fichiers-de-configuration-et-de-langue-des-constantes-au-lieu-du-texte-dans-le-code)
+- [Utilisez des fichiers de configuration et de langue, des constantes au lieu du texte dans le code](#utilisez-des-fichiers-de-configuration-et-de-langue-des-constantes-au-lieu-du-texte-dans-le-code)
 
-[Utiliser les outils standard de Laravel acceptés par la communauté](#utiliser-les-outils-standard-de-laravel-acceptés-par-la-communauté)
+- [Utiliser les outils standard de Laravel acceptés par la communauté](#utiliser-les-outils-standard-de-laravel-acceptés-par-la-communauté)
 
-[Suivre les conventions de nommage de Laravel](#suivre-les-conventions-de-nommage-de-laravel)
+- [Suivre les conventions de nommage de Laravel](#suivre-les-conventions-de-nommage-de-laravel)
 
-[Utilisez une syntaxe plus courte et plus lisible dans la mesure du possible](#utilisez-une-syntaxe-plus-courte-et-plus-lisible-dans-la-mesure-du-possible)
+- [Utilisez une syntaxe plus courte et plus lisible dans la mesure du possible](#utilisez-une-syntaxe-plus-courte-et-plus-lisible-dans-la-mesure-du-possible)
 
-[Utilisez un conteneur IoC ou des façades au lieu de la nouvelle classe](#utilisez-un-conteneur-ioc-ou-des-façades-au-lieu-de-la-nouvelle-classe)
+- [Utilisez un conteneur IoC ou des façades au lieu de la nouvelle classe](#utilisez-un-conteneur-ioc-ou-des-façades-au-lieu-de-la-nouvelle-classe)
 
-[Ne pas obtenir directement les données du fichier `.env` directement](#ne-pas-obtenir-directement-les-données-du-fichier-env)
+- [Ne pas obtenir directement les données du fichier `.env` directement](#ne-pas-obtenir-directement-les-données-du-fichier-env)
 
-[Stocker les dates au format standard. Utiliser des accesseurs et des mutateurs pour modifier le format de date](#stocker-les-dates-au-format-standard-Utiliser-des-accesseurs-et-des-mutateurs-pour-modifier-le-format-de-date)
+- [Stocker les dates au format standard. Utiliser des accesseurs et des mutateurs pour modifier le format de date](#stocker-les-dates-au-format-standard-Utiliser-des-accesseurs-et-des-mutateurs-pour-modifier-le-format-de-date)
 
-[D'autres bonnes pratiques](#dautres-bonnes-pratiques)
+- [D'autres bonnes pratiques](#dautres-bonnes-pratiques)
+
 
 ### **Principe de responsabilité unique**
 
