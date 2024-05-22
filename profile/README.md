@@ -1,16 +1,14 @@
 # DOCUMENTATION TECHNIQUE GENERALE (DTIC)
 
-
-
-
-
-
+---------------------------------------------------------------------------------------------------
 
 ![Laravel Logo](https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg)
 
-## Normes et conventions Laravel
+# Normes et conventions Laravel
 
 Cette documentation technique vise à fournir des lignes directrices et des normes pour le développement avec le framework Laravel au sein de la Direction des Technologies de l'Information du Ministère de la Santé et de la Population. Elle couvre une variété de bonnes pratiques et conventions à suivre pour assurer la qualité, la maintenabilité et la cohérence du code. Les thèmes abordés incluent le principe de responsabilité unique, l'utilisation de modèles et de contrôleurs, la validation, l'organisation de la logique métier, et l'importance de ne pas se répéter. De plus, des recommandations sont faites concernant l'utilisation d'Eloquent plutôt que de requêtes SQL brutes, l'affectation en masse, et la gestion des requêtes dans les modèles Blade. En suivant ces conventions, les développeurs peuvent créer des applications Laravel plus robustes, efficaces et faciles à maintenir.
+
+## Table des matières
 
 - [Principe de responsabilité unique](#principe-de-responsabilité-unique)
 
@@ -609,7 +607,7 @@ Minimisez l'utilisation de PHP vanilla dans les modèles de blade.
 
 ![Flutter Logo](https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png)
 
-## Normes et Conventions Flutter
+# Normes et Conventions Flutter
 
 Cette documentation fournit des lignes directrices et des normes pour le développement avec le framework Flutter. Ces conventions visent à assurer la qualité, la maintenabilité et la cohérence du code. Elles couvrent une variété de bonnes pratiques, allant de la structure du projet à la gestion de l'état et l'utilisation de widgets.
 
