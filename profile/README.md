@@ -671,7 +671,7 @@ Respectez les bonnes pratiques suivantes pour l'utilisation des widgets:
 
 ### Gestion de l'état
 
-Choisissez une solution de gestion de l'état adaptée à la taille et à la complexité de votre application.
+Choisissez une solution de gestion de l'état adaptée à la taille et à la complexité de votre application. Dans le cadre des applications Mangwele et Mavimpi, nous utiliserons Getx pour la gestion de l'état en raison de ses nombreuses fonctionnalités. Cette classification ne vise pas à comparer les fonctionnalités des différentes solutions, mais à fournir des recommandations en fonction de la complexité de l'application.
 
 - Pour des applications simples, utilisez `setState`.
 - Pour des applications de taille moyenne, utilisez `Provider`.
