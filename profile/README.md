@@ -409,9 +409,9 @@ Préférez utiliser les fonctionnalités intégrées de Laravel et les packages 
 Tâche | Outils standard | Outils tiers
 ------------ | ------------- | -------------
 Autorisation | Policies | Entrust, Sentinel et d'autres packages
-Compiler des assets | Laravel Mix, Vite | Grunt, Gulp, packages tiers
+Compiler des assets | Vite | Grunt, Gulp, packages tiers
 Environnement de développement | Laravel Sail, Homestead | Docker
-Déploiement | Laravel Forge | Deployer et d'autre solutions
+Déploiement | Serveur Linux | Deployer et d'autre solutions
 Tests unitaires | PHPUnit, Mockery | Phpspec, Pest
 Test du navigateur | Laravel Dusk | Codeception
 DB | Eloquent | SQL, Doctrine
@@ -426,7 +426,7 @@ Localisation | Built-in | 3rd party packages
 Interfaces utilisateur en temps réel | Laravel Echo, Pusher | Packages tiers et utilisation directe de WebSockets
 Générer des données de test | Seeder classes, Model Factories, Faker | Création manuelle de données de test
 Planification des tâches | Laravel Task Scheduler | Scripts et packages tiers
-DB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDB
+DB | MySQL, PostgreSQL, SQLite | MongoDB
 
 [🔝 Retour au contenu](#contents)
 
