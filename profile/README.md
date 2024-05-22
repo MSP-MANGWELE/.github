@@ -1,6 +1,6 @@
 # DOCUMENTATION TECHNIQUE GENERALE (DTIC)
 
-### Normes et conventions Laravel
+## Normes et conventions Laravel
 
 Cette documentation technique vise à fournir des lignes directrices et des normes pour le développement avec le framework Laravel au sein de la Direction des Technologies de l'Information du Ministère de la Santé et de la Population. Elle couvre une variété de bonnes pratiques et conventions à suivre pour assurer la qualité, la maintenabilité et la cohérence du code. Les thèmes abordés incluent le principe de responsabilité unique, l'utilisation de modèles et de contrôleurs, la validation, l'organisation de la logique métier, et l'importance de ne pas se répéter. De plus, des recommandations sont faites concernant l'utilisation d'Eloquent plutôt que de requêtes SQL brutes, l'affectation en masse, et la gestion des requêtes dans les modèles Blade. En suivant ces conventions, les développeurs peuvent créer des applications Laravel plus robustes, efficaces et faciles à maintenir.
 
@@ -592,4 +592,116 @@ Ne mettez jamais aucune logique dans les fichiers de routes.
 Minimisez l'utilisation de PHP vanilla dans les modèles de blade.
 
 [🔝 Retour au contenu](#contents)
+
+
+## Normes et Conventions Flutter
+
+Cette documentation fournit des lignes directrices et des normes pour le développement avec le framework Flutter. Ces conventions visent à assurer la qualité, la maintenabilité et la cohérence du code. Elles couvrent une variété de bonnes pratiques, allant de la structure du projet à la gestion de l'état et l'utilisation de widgets.
+
+## Table des matières
+
+- [Structure du projet](#structure-du-projet)
+- [Nom des fichiers et des classes](#nom-des-fichiers-et-des-classes)
+- [Formatage du code](#formatage-du-code)
+- [Utilisation des Widgets](#utilisation-des-widgets)
+- [Gestion de l'état](#gestion-de-létat)
+- [Navigation](#navigation)
+- [Bonnes pratiques pour les performances](#bonnes-pratiques-pour-les-performances)
+- [Internationalisation](#internationalisation)
+- [Tests](#tests)
+- [Documentation et commentaires](#documentation-et-commentaires)
+- [Sécurité](#sécurité)
+
+### Structure du projet
+
+Adoptez une structure de projet standard pour organiser votre code de manière claire et compréhensible.
+
+```
+lib/
+|-- src/
+|   |-- models/
+|   |-- views/
+|   |-- controllers/
+|   |-- services/
+|   |-- utils/
+|-- main.dart
+```
+
+- **models/**: Contient les classes de modèles de données.
+- **views/**: Contient les widgets et les écrans de l'interface utilisateur.
+- **controllers/**: Contient la logique métier et les contrôleurs.
+- **services/**: Contient les services pour la communication avec des APIs ou des bases de données.
+- **utils/**: Contient les utilitaires et les fonctions d'aide.
+
+### Nom des fichiers et des classes
+
+Suivez des conventions de nommage claires pour améliorer la lisibilité et la maintenabilité du code.
+
+- Les fichiers doivent être nommés en snake_case (par exemple, `user_profile.dart`).
+- Les classes doivent être nommées en PascalCase (par exemple, `UserProfile`).
+
+### Formatage du code
+
+Utilisez `flutter format` pour formater automatiquement votre code conformément aux conventions de style Dart.
+
+- Limitez les lignes à 80 caractères.
+- Utilisez des accolades pour toutes les structures conditionnelles et boucles, même si elles contiennent une seule instruction.
+- Indentez avec deux espaces, pas de tabulations.
+
+### Utilisation des Widgets
+
+Respectez les bonnes pratiques suivantes pour l'utilisation des widgets:
+
+- Utilisez des widgets StatelessWidget autant que possible pour des raisons de performance.
+- Utilisez des widgets StatefulWidget uniquement lorsque l'état local est nécessaire.
+- Séparez les widgets complexes en plusieurs widgets plus petits et réutilisables.
+
+### Gestion de l'état
+
+Choisissez une solution de gestion de l'état adaptée à la taille et à la complexité de votre application.
+
+- Pour des applications simples, utilisez `setState`.
+- Pour des applications de taille moyenne, utilisez `Provider`.
+- Pour des applications complexes, envisagez des solutions comme `Getx` ou `Bloc`.
+
+### Navigation
+
+Utilisez le package `flutter_navigation` pour une navigation claire et concise.
+
+- Définissez toutes les routes dans un fichier central `routes.dart`.
+- Utilisez `Navigator.pushNamed` pour la navigation basée sur des noms de routes.
+
+### Bonnes pratiques pour les performances
+
+- Minimisez l'utilisation de widgets redondants.
+- Utilisez des `const` constructors lorsque possible.
+- Privilégiez les `ListView.builder` au lieu des `ListView` pour les longues listes.
+- Utilisez les outils de profilage de Flutter pour identifier et résoudre les problèmes de performance.
+
+### Internationalisation
+
+- Utilisez le package `flutter_localizations` pour l'internationalisation.
+- Stockez toutes les chaînes de caractères dans des fichiers de localisation.
+- Utilisez des clés de localisation descriptives (par exemple, `home_title` plutôt que `ht`).
+
+### Tests
+
+- Écrivez des tests unitaires pour la logique métier.
+- Écrivez des tests d'intégration pour les interactions entre les composants.
+- Utilisez `flutter_test` pour les tests de widgets.
+- Utilisez `mockito` ou `bloc_test` pour les tests de mocks et de blocs respectivement.
+
+### Documentation et commentaires
+
+- Documentez toutes les classes et méthodes publiques avec des commentaires de documentation.
+- Utilisez des commentaires pour expliquer les parties complexes du code, mais préférez un code clair et auto-documenté.
+- Utilisez des commentaires TODO pour indiquer les parties du code nécessitant des améliorations ou des fonctionnalités futures.
+
+### Sécurité
+
+- Ne stockez jamais d'informations sensibles en clair dans le code.
+- Utilisez des packages comme `flutter_secure_storage` pour le stockage sécurisé des données sensibles.
+- Validez et vérifiez toutes les entrées utilisateur pour éviter les failles de sécurité telles que les injections SQL et les XSS.
+
+En suivant ces normes et conventions, les développeurs peuvent créer des applications Flutter plus robustes, maintenables et cohérentes.
 
