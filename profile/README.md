@@ -748,6 +748,96 @@ Dans ce cas, vous pouvez configurer Getx pour gérer les traductions de manière
 
 En suivant ces normes et conventions, les développeurs peuvent créer des applications Flutter plus robustes, maintenables et cohérentes.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+![Logo de Nuxt 3](https://nuxt.com/assets/design-kit/logo-green-black.svg)
+
+# Normes et conventions Nuxt3
+
+La présente section énonce les normes et conventions à suivre lors du développement d'applications avec le framework Nuxt3 au sein de la Direction des Technologies de l'Information du Ministère de la Santé et de la Population. Ces directives visent à garantir la qualité, la maintenabilité et la cohérence du code, tout en favorisant les bonnes pratiques de développement.
+
+## Structure du projet
+
+La structure du projet joue un rôle crucial dans la lisibilité et la gestion efficace du code. Nous recommandons l'adoption d'une structure standard pour organiser le code de manière claire et logique :
+
+```
+|-- assets/
+|-- components/
+|-- composables/
+|-- layouts/
+|-- middleware/
+|-- pages/
+|-- plugins/
+|-- public/
+|-- store/
+|-- .nuxt/
+|-- nuxt.config.js
+```
+
+- **assets/**: Contient les ressources statiques telles que les images, les polices, etc.
+- **composables/**: Ce répertoire contient tous les composables de l'application.
+- **components/**: Regroupe les composants réutilisables de l'interface utilisateur.
+- **layouts/**: Comprend les mises en page globales de l'application.
+- **middleware/**: Contient les middleware de l'application, utilisés pour intercepter les requêtes avant qu'elles n'atteignent les pages.
+- **pages/**: Contient les pages de l'application, chaque fichier correspondant à une route.
+- **plugins/**: Contient les plugins Nuxt.js, tels que des modules ou des fonctionnalités tiers.
+- **static/**: Contient les ressources statiques qui ne nécessitent pas de traitement spécial par Webpack.
+- **store/**: Regroupe les fichiers de magasin Vuex pour la gestion de l'état de l'application.
+- **.nuxt/**: Contient les fichiers générés par Nuxt.js lors de la construction de l'application.
+- **nuxt.config.js**: Fichier de configuration principal de Nuxt.js.
+
+## Convention de nommage des fichiers et des classes
+
+Pour assurer une cohérence dans le code, il est essentiel de suivre des conventions de nommage claires :
+
+- Les noms de fichiers doivent être en kebab-case, par exemple, `my-component.vue`.
+- Les noms de composants Vue doivent être en PascalCase, par exemple, `MyComponent`.
+- Utilisez des noms de fichiers descriptifs qui reflètent la fonctionnalité du composant ou de l'élément.
+
+## Syntaxe et formatage du code
+
+Le respect d'une syntaxe cohérente et de bonnes pratiques de formatage garantit la lisibilité et la maintenance du code :
+
+- Utilisez deux espaces pour l'indentation.
+- Privilégiez les apostrophes simples pour les chaînes de caractères.
+- Évitez les lignes de code trop longues, idéalement limitées à 80 caractères.
+- Utilisez les fonctionnalités ES6+ telles que les fonctions fléchées et les destructurations lorsque cela est approprié.
+
+## Gestion de l'état
+
+Pour la gestion de l'état dans les applications Nuxt3, nous recommandons l'utilisation du module Pinia. Cela permet une gestion centralisée de l'état de l'application et facilite la communication entre les composants.
+
+## Utilisation des plugins et middleware
+
+Les plugins et middleware jouent un rôle essentiel dans l'extension des fonctionnalités de Nuxt3 et la manipulation des requêtes avant qu'elles n'atteignent les pages. Suivez ces directives :
+
+- Utilisez les plugins pour intégrer des fonctionnalités tierces ou configurer des bibliothèques externes.
+- Utilisez le middleware pour effectuer des opérations sur les requêtes entrantes avant de les traiter.
+
+## Documentation et commentaires
+
+Une documentation claire et des commentaires pertinents favorisent la compréhension du code par les développeurs :
+
+- Documentez les composants, les plugins et toute fonctionnalité complexe de manière concise mais complète.
+- Utilisez des commentaires pour expliquer les parties du code qui pourraient être moins évidentes pour d'autres développeurs.
+- Privilégiez un code auto-explicatif, mais n'hésitez pas à commenter les parties essentielles ou complexes.
+
+## Tests
+
+Pour garantir la robustesse et la fiabilité de l'application, la mise en œuvre de tests est essentielle :
+
+- Écrivez des tests unitaires pour valider le bon fonctionnement des composants et des fonctionnalités.
+- Utilisez des outils de test tels que Jest pour les tests unitaires et d'intégration.
+
+## Sécurité
+
+La sécurité de l'application est primordiale. Suivez ces bonnes pratiques pour garantir la sécurité de votre code :
+
+- Évitez de stocker des informations sensibles dans le code source, telles que des clés d'API ou des jetons d'authentification.
+- Assurez-vous de valider et de filtrer toutes les données provenant des utilisateurs pour éviter les attaques XSS ou les injections SQL.
+
+En suivant ces normes et conventions, les développeurs peuvent créer des applications Nuxt3 robustes, maintenables et cohérentes au sein de la Direction des Technologies de l'Information du Ministère de la Santé et de la Population.
+
 
 
 
