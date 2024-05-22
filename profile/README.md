@@ -4,6 +4,7 @@ Ce document aborde plusieurs aspects pour le developpement des differentes appli
 ## Table des matières
 - [Normes et conventions Laravel](#normes-et-conventions-laravel)
 - [Normes et Conventions Flutter](#normes-et-conventions-flutter)
+- [Normes et conventions Nuxt3](#normes-et-conventions-nuxt3)
 - [Documentation de Projet pour les Applications Mobiles Mangwele et Mavimpi](#documentation-de-projet-pour-les-applications-mobiles-mangwele-et-mavimpi)
 
 ---------------------------------------------------------------------------------------------------
@@ -752,7 +753,7 @@ En suivant ces normes et conventions, les développeurs peuvent créer des appli
 
 ![Logo de Nuxt 3](https://nuxt.com/assets/design-kit/logo-green-black.svg)
 
-# Normes et conventions Nuxt3
+# **Normes et conventions Nuxt3**
 
 La présente section énonce les normes et conventions à suivre lors du développement d'applications avec le framework Nuxt3 au sein de la Direction des Technologies de l'Information du Ministère de la Santé et de la Population. Ces directives visent à garantir la qualité, la maintenabilité et la cohérence du code, tout en favorisant les bonnes pratiques de développement.
 
