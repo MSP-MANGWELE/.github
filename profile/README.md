@@ -1,15 +1,12 @@
+# DOCUMENTATION TECHNIQUE GENERALE 
+
 ## Direction des Technologies de l'Information du Ministère de la Santé et de la Population (DTIC)
 
+### Normes et conventions Laravel
 
-# Normes et conventions Laravel
+- [Principe de responsabilité unique](#principe-de-responsabilité-unique)
 
-[![Laravel example app](/images/laravel-real-world-banner.png?raw=true)](https://github.com/alexeymezenin/laravel-realworld-example-app)
-
-## Contenu
-
-[Principe de responsabilité unique](#principe-de-responsabilité-unique)
-
-[Gros Modèles, contrôleurs maigres](#gros-modèles-contrôleurs-maigres)
+- [Gros Modèles, contrôleurs maigres](#gros-modèles-contrôleurs-maigres)
 
 [Validation](#validation)
 
